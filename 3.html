@@ -4,20 +4,12 @@
         <title>WEB1 - JavsScript</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="color.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <input type="button" value="night" onclick="
-        var target = document.querySelector('body');
-        if(this.value ==='night'){
-            target.style.backgroundColor='black'
-            target.style.color='white'
-            this.value ='day'
-        } else{
-            target.style.backgroundColor='white'
-            target.style.color='black'
-            this.value ='night'
-        }">
+        <input type="button" value="night" onclick="nightDayHandler(this)">
         <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
